@@ -539,9 +539,8 @@ dependencies {
     // Allows reflection of the relative time class to pass Locale as parameter
     implementation(libs.restrictionBypass)
 
-    // OACP SDK
+    // OACP SDK — ContentProvider + OacpReceiver plumbing for voice assistant discovery
     implementation(files("libs/oacp-android-release.aar"))
-    implementation("androidx.annotation:annotation:1.7.1")
 
     // debugImplementation because LeakCanary should only run in debug builds.
     // debugImplementation(libs.leakcanary)
